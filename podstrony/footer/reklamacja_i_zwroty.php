@@ -50,10 +50,5 @@
                     </div>
             <?php include 'stopka_option.php';?>
         </div>
-        </body>
-            
-            
-            
-            
-            
+        </body>      
     </html>

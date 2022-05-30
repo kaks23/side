@@ -4,7 +4,6 @@
 ?>
 </script>
 <?php
-
     class login 
     {
         public function __construct($login, $password)
@@ -36,7 +35,7 @@
         }
     }
 
-    $class = new login($_POST['login'], $_POST['password']); //coll class login
+    $class = new login($_POST['login'], $_POST['password']); //call class login
 
 
 ?>

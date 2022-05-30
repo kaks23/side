@@ -14,7 +14,6 @@
             <link rel="stylesheet" href="css/stopka.css">
             
         </head>
-
         <body>
             <div id='page'>
             <?php
@@ -26,9 +25,4 @@
             ?>
             </div>
         </body>
-
-
-
-
-
     </html>

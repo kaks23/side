@@ -9,8 +9,7 @@
     <title>Księganet</title>
 </head>
 <body>
-    
+    <h1><a href="../../skrypty/logout.php">Wyloguj się</a></h1>
 </body>
 </html>
 
-<h1><a href="../../skrypty/logout.php">Wyloguj się</a></h1>

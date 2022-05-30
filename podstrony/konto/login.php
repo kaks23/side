@@ -5,7 +5,6 @@
         header("Location: ../../index.php"); //redirection to home page
     }
 ?>
-
 <!DOCTYPE html>
 <html lang="pl"> 
 <head>
