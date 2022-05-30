@@ -44,54 +44,57 @@
                 echo $e->getMessage(); //print possibly error
             }
         }
-        public function max_page()
-        {
-            return $this->num_page; //send variable to pages class
-        }
     }
-    class pages
+    class pages extends offer
     {
-        public function __construct($page, $cat, $max)//calculate page on webside
+        public function __construct($page, $cat)//calculate page on webside
         {
-            echo '<div id="pages">'; //create div
-            $i=0; //params increment in loop
-            $a=2; //params to calculate number of pages
-            $max>5 ? $m=5 : $m=$max; //if max pages < 5 then variable m is equal to variable max
-            
-            //switch to set paging
-            switch($page)  
+            try
             {
-                case 1: $a=0; break;
-                case 2: $a=1; break;
-                case $max: $a=4; break;
-                case $page==$max-1 && $page>5: $a=0; break;
-            }
-
-            if($max==1){} //So as not print 'Poprzednia' params
-            elseif($page==$max) //So as not  print 'Następna' params
-            {
-                echo '<a href="offer.php?k='.$cat.'&page='.($page-1).'">Poprzednia</a>';
-                while($i<$m)
+                $max = $this->num_page;
+                echo '<div id="pages">'; //create div
+                $i=0; //params increment in loop
+                $a=2; //params to calculate number of pages
+                $max>5 ? $m=5 : $m=$max; //if max pages < 5 then variable m is equal to variable max
+                
+                //switch to set paging
+                switch($page)  
                 {
-                    echo '<a href="offer.php?k='.$cat.'&page='.($page+$i-$a).'">'.($page+$i-$a).'</a>';
-                    $i++;
+                    case 1: $a=0; break;
+                    case 2: $a=1; break;
+                    case $max: $a=4; break;
+                    case $page==$max-1 && $page>5: $a=0; break;
                 }
-            }
-            else //print default params
-            {
-                if($page!=1)
+
+                if($max==1){} //So as not print 'Poprzednia' params
+                elseif($page==$max) //So as not  print 'Następna' params
                 {
                     echo '<a href="offer.php?k='.$cat.'&page='.($page-1).'">Poprzednia</a>';
+                    while($i<$m)
+                    {
+                        echo '<a href="offer.php?k='.$cat.'&page='.($page+$i-$a).'">'.($page+$i-$a).'</a>';
+                        $i++;
+                    }
                 }
-
-                while($i<$m)
+                else //print default params
                 {
-                    echo '<a href="offer.php?k='.$cat.'&page='.($page+$i-$a).'">'.($page+$i-$a).'</a>';
-                    $i++;
+                    if($page!=1)
+                    {
+                        echo '<a href="offer.php?k='.$cat.'&page='.($page-1).'">Poprzednia</a>';
+                    }
+
+                    while($i<$m)
+                    {
+                        echo '<a href="offer.php?k='.$cat.'&page='.($page+$i-$a).'">'.($page+$i-$a).'</a>';
+                        $i++;
+                    }
+                    echo '<a href="offer.php?k='.$cat.'&page='.($page+1).'">Następna</a>';
                 }
-                echo '<a href="offer.php?k='.$cat.'&page='.($page+1).'">Następna</a>';
+                echo '</div>';
+            }catch(PDOException $e)
+            {
+                echo $e->getMessage();
             }
-            echo '</div>';
         }
     }
 ?>

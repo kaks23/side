@@ -6,10 +6,10 @@
 class connect
 {
     //const params mysql
-    const hostname = 'localhost';
-    const username = 'root';
-    const password = '';
-    const dbname = 'ksiegarnia';
+    private const hostname = 'localhost';
+    private const username = 'root';
+    private const password = '';
+    private const dbname = 'ksiegarnia';
     private $conn;
 
     public function __construct()

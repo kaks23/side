@@ -16,13 +16,13 @@
                     echo '</tr>';
                     echo '<tr>';
                     echo '<td>';
-                    echo '<a href="#"><img src="'.$ob['path_img'].'.jpg" alt="'.$ob['name'].'"></a>';
-                    echo '<a href="#"><span>'.$ob['name'].'</span></a>';
+                    echo '<a href="#"><img src="'.$ob['path_img'].'.jpg" alt="'.$ob['name'].'">';
+                    echo '<span>'.$ob['name'].'</span></a>';
                     echo '</td>';
                 }else{
                     echo '<td>';
-                    echo '<a href="#"><img src="'.$ob['path_img'].'.jpg" alt="'.$ob['name'].'"></a>';
-                    echo '<a href="#"><span>'.$ob['name'].'</span></a>';
+                    echo '<a href="#"><img src="'.$ob['path_img'].'.jpg" alt="'.$ob['name'].'">';
+                    echo '<span>'.$ob['name'].'</span></a>';
                     echo '</td>';
                 }
                 

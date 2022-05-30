@@ -33,12 +33,11 @@
                 <?php
                     include 'mine_page_offer_exec.php';
                     $new = new offer(htmlspecialchars($_GET['k']), htmlspecialchars($_GET['page'])); //create new object
-                    $max_page = $new->max_page(); //call to max page function
                 ?>
             </tr>
         </table>
         <?php
-            new pages(htmlspecialchars($_GET['page']), htmlspecialchars($_GET['k']), $max_page);//create new object and send params
+            new pages(htmlspecialchars($_GET['page']), htmlspecialchars($_GET['k']));//create new object and send params
         ?>
     </div>
 </div>
