@@ -1,0 +1,40 @@
+#stopka
+{
+    background-color: #1B1B1B;
+}
+
+#stopka ol
+{
+    height: 50px;
+    margin: 0;
+    background-color: #1B1B1B;
+    border-top: 1px white solid;
+}
+
+#stopka li
+{
+    display: inline;
+    width: 200px;
+}
+
+#stopka a
+{
+    color: white;
+    font-size:large;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 200px;
+    height: 30px;
+    display: block;
+    float: left;
+    background-color: #1B1B1B;
+}
+
+#podpis
+{
+    color: white;
+    margin: 0 auto;
+    width: 400px;
+    display: block;
+    background-color: #1B1B1B;
+}

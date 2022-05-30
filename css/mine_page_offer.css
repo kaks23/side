@@ -1,0 +1,71 @@
+#menu_offer
+{
+    height: 1150px;
+}
+#kategory
+{
+    width: 150px;
+    float: left;
+}
+#books
+{
+    width: 850px;
+    float: left;
+}
+ul
+{
+    list-style-type: none;
+    padding: 5px;
+    margin-top: 0;
+}
+#kategory ul > li > a
+{
+    padding: 10px;
+    display: block;
+    border-bottom: 1px white solid;
+}
+#kategory ul > li > a:hover
+{
+    background-color: #1b1b1b;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+#books td
+{
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+}
+#books h4
+{
+    width: 100%;
+    height: 50px;
+    display: inline;
+    color: white;  
+    display: block;
+}
+.button
+{
+    width: 130px;
+    padding-left: 10px;
+    padding-right: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    color: white;
+    border: 1px solid white;
+}
+#pages
+{
+    margin-top: 30px;
+}
+#pages a
+{
+    font-size: 20px;
+    margin: 40px;
+    margin-left: 50px;
+}

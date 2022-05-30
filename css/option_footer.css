@@ -1,0 +1,19 @@
+#text
+{
+    font-size: large;
+}
+input, textarea
+{
+    color: white;
+}
+
+textarea
+{
+    width: 800px;
+    height: 200px;
+}
+
+#tx
+{
+    vertical-align: top;
+}

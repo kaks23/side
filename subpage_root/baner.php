@@ -1,0 +1,1 @@
+<div id="baner"><img src="../../grafika/baner.png" alt="baner"></div>

@@ -1,0 +1,1 @@
+<div id='slider'><img src="grafika/slider.gif" alt="slider"></div>
